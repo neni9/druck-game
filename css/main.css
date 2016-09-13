@@ -1,0 +1,83 @@
+body {
+	background: #26C281;
+	color: rgba(0,0,0,0.45);
+	line-height: 1.25;
+}
+p {font-size: 1.2em;}
+a {color: #003333;}
+a:hover {color: #fff;text-decoration: none;}
+a.btnscor{color: #fff;}
+.global{margin: 1em 0 1em 0}
+.tab{margin: 0 1em 0 1em;}
+.btn-primary{background: #003333!important;border-color: #003333;}
+.btn-primary:hover{background: #009966!important;border-color: #009966;}
+.btn-default{background: #339966!important;border-color: #339966; color:#fff; text-shadow: none!important;}
+.btn-default:hover{background: #00CC99!important;border-color: #00CC99;color:#fff;text-shadow: none!important;}
+.btn-gg{background: #009966!important;border-color: #009966;}
+.btn-gg:hover{background: #003333!important;border-color: #003333;}
+.menu {padding-top: 2rem;}
+.menu a {float: right; margin-left: 0.5rem;}
+.header{ border-bottom: 2px solid #fff;}
+.connexion, .info{margin-top:5%;}
+.logout{margin-top:1rem;margin-left:0!important;left:0;}
+.tengo-charli{color:#330033;font-weight: 600;}
+.important{background:rgba(255, 255, 255, .3);/*background:#00CC99;*/ font-size:1.2em;padding: 1em;}
+/* ============= progress-bar focus ===============
+===================================================*/
+.progress-bar {
+float: left;
+ width: 0;
+ 	transition: width .6s ease;
+ }
+ .progress-bar {
+    background-image: -webkit-linear-gradient(top,#003333 0,#336666 100%);
+    background-image: -o-linear-gradient(top,#003333 0,#336666 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#003333),to(#336666));
+    background-image: linear-gradient(to bottom,#003333 0,#336666 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff003333', endColorstr='#ff336666', GradientType=0);
+    background-repeat: repeat-x;
+}
+/*.progress-striped .progress-bar,
+.progress-bar-striped {
+background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+background-size: 40px 40px;}
+.progress.active .progress-bar,
+.progress-bar.active {
+	-webkit-animation: progress-bar-stripes 2s linear infinite;
+	-o-animation: progress-bar-stripes 2s linear infinite;
+	animation: progress-bar-stripes 2s linear infinite;
+}
+.progress-bar-success {
+background-color: #5cb85c;
+ }
+.progress-striped .progress-bar-success {
+background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+ }*/
+
+
+/* ============= END.progress-bar focus ===============
+===================================================*/
+
+
+
+
+@media screen and (max-width: 980px) {
+	body {
+		
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+	.menu a{
+		float:none!important;
+		margin-bottom: 1em;
+	}
+@media screen and (max-width: 33.5625em) {
+	.menu  {
+		float:none!important;
+		margin-bottom: 1em;
+	}
+
+	}

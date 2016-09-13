@@ -1,0 +1,30 @@
+<div ng-hide="questionApp.resultat">
+                <div class="test">
+                    <h2 >Question</h2>
+                </div>
+                <div class="score">Score : {{ questionApp.score }}</div>
+                <div class="progress active" style="height: 10px;">
+                    <div class="progress-bar" style="width: {{questionApp.time * ( 100 / questionApp.maxTime )}}%;"></div>
+                </div>
+
+                {{ questionApp.question[questionApp.index].q }}
+                <p>Réponse :</p>
+                <form novalidate ng-submit="questionApp.validation()">
+                    <div class="input-group" ng-repeat="reponse in questionApp.question[questionApp.index].a track by $index">
+                        <input type="radio" name="reponseID" ng-model="questionApp.reponse" id="{{$index}}" value="{{$index}}">
+                        <label for="{{$index}}" class="tab"> {{ reponse.reponse }}</label>
+                    </div>
+                    <input type="submit" class ="btn btn-primary global" value="Question suivante">
+                </form>
+            </div>
+            <div ng-show="questionApp.resultat">
+                <div class="test">
+                    <h2>Resultat</h2>
+
+
+                    <div class="btn  btn-gg" ng-show="questionApp.ok"><a href="#/score" class="btnscor">Bien jouer</a></div>
+                    <div class="btn btn-danger" ng-show="questionApp.nope">Tu peux continuer à Boire !!</div>
+                    <div class="btn btn-primary"><a href="#/score" class="btnscor">Score : {{ questionApp.resultat }}</a></div>
+                    <p class="global">{{ questionApp.result }}</p>
+                </div>
+            </div>

@@ -1,0 +1,18 @@
+
+<div class="col-md-12">
+	
+            <div class="test">
+                <h2>Tableau des scores</h2>
+            </div>
+
+            <table class="table">
+                <tr>
+                    <th>Utilisateur</th>
+                    <th>Score</th>
+                </tr>
+                <tr ng-repeat="player in score.player track by $index">
+                    <td>{{ player.name }}</td>
+                    <td>{{ player.score }}</td>
+                </tr>
+            </table>
+        </div>

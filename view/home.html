@@ -1,0 +1,53 @@
+
+
+
+<div class="col-md-12">
+	<!-- deconnexion-->
+	<div class="col-md-12" ng-show="home.userData">
+		<div class="col-md-4 col-md-offset-8 logout" ng-show="home.userData">
+		      Connecté sous <b> {{home.userData.displayName}} </b>
+		      <input type="button" class="btn btn-danger" value="Deconnexion" ng-click="home.signOut()">
+		    </div>
+		</div>
+	</div>
+	<!-- connect to google-->
+	<div class="col-md-4 col-md-offset-4 connexion" ng-hide="home.userData">
+	    <div class="alert alert-danger" ng-show="home.authError">Erreur lors de l'authentification : <i> {{home.authError}} </i></div>
+	    <input type="button" class="btn btn-primary btn-large btn-block" value="Se connecter avec Google" ng-click="home.signWithGoogle()">
+	</div>
+
+	<!-- intro -->
+	<div class="col-md-12 presentation" ng-show="home.userData">
+		
+			
+			<h2>Es-tu en état de conduire ?</h2>
+                <div ng-show="home.userData">
+                    <p>Connecte toi et passe le test ! 
+                   <i>(Déjà <b>{{ home.player.length }}</b> personnes ont répondu)</i></p>
+                </div>
+                <div ng-show="home.userData">
+                    <p>Tu sors d'une soirée un peu arrosée et c'est le moment de prendre la voiture. Mais tu n'es pas sûr de savoir si tu es en état de conduire ?</p>
+                    <p>Ne t'inquiète pas ! Cette application va t'aider à déterminer si tu as les idées claires et un cerveau suffisamment réactif, en te proposant de répondre à une série de questions.</p>
+                    <p>En résumé : <span>tu réponds aux questions et on te dis si t'es bourré</span> !</p>
+                    <p class="tengo-charli">Attention ! Cette application web s'inscrit dans un cadre de pur divertissement, et ne constitue en aucun cas une autorisation officielle de prendre la route, et ce quelque-soit le résultat. Le conducteur reste le seul responsable en cas d'accident lié à la consommation abusive d'alcool</p>
+             <div class="important">       
+				<input type="checkbox" ng-model="val"> J'ai bien compris que ce test n'est pas officiel et que je suis le seul garant de ma sécurité.<br/>
+	   			<a class="btn btn-primary global" href="#/question" ng-show="val"> C'est parti ! </a>
+   			</div>
+	</div>
+		
+	</div>
+
+
+
+
+
+	<!-- content-page -->
+	<div class="col-md-12 info" ng-hide="home.userData">
+
+		<p class="text-center">Application web crée avec <strong><a href="https://angularjs.org/" target="_blank">Angular</a></strong> et <strong><a href="https://www.firebase.com" target="_blank">Firebase</a></strong> !</p>
+		
+	</div>
+
+	<!-- fin -->
+</div>
